@@ -36,7 +36,7 @@ def introduce():
 
 
 def set_up():
-  infile = open(f'tables_and_files/scrabble_exclusive.txt')
+  infile = open(f'v4/tables_and_files/scrabble_exclusive.txt')
   return infile
 
 
@@ -151,7 +151,7 @@ def process_blacks(blacks, yellow_results):
 def generate_optimal_guesses(black_results):
   print('Here are some optimal guesses:')
   sorted_list = {}
-  infile_1 = open('tables_and_files/scrabble_fives.txt', 'r')
+  infile_1 = open('v4/tables_and_files/scrabble_fives.txt', 'r')
 
   for word in infile_1:
     exclusion_score = 0
